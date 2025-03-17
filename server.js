@@ -14,6 +14,10 @@ let users = [
   { id: 2, name: "Bob", email: "bob@example.com" },
 ];
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the Simple Node.js Web Service!");
+});
+
 // Get all users
 app.get("/users", (req, res) => {
   res.json(users);
